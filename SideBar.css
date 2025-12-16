@@ -1,0 +1,273 @@
+body{
+    background-color:#f4f4f4;
+    height: 100%;
+}
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+
+.sidebar-mini {
+  width: 60px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  margin-right: 5px;
+   height: 900px; 
+   
+}
+
+.mini-item {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  
+  
+}
+
+.mini-item.active {
+  background: #9b6cff;
+  color: #fff;
+}
+
+
+
+.sidebar-full {
+  width: 260px;
+  background: #fafafa;
+  border-right: 1px solid #eee;
+  padding-top: 20px;
+  height: 900px; 
+}
+
+.section {
+   margin-bottom: 15px; 
+  border-radius: 15px;
+  padding: 7.5px 14px;
+  width:250px;
+  height:44px;
+ 
+}
+
+.section.active {
+  opacity: 1;
+  background: #7D21FE80;
+
+}
+
+.section p {
+  font-family: Cairo;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color:  #0A003D80;
+
+    margin-left: 10px;
+    margin-top: 2px;
+    
+}
+.section.active p {
+    color: #FFFFFF;
+}
+.section svg  {
+  fill: #7D21FE;
+  fill-opacity: 0.5;
+}
+.section.active svg  {
+  fill: #FFFFFF;
+  fill-opacity:1;
+}
+
+
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section li {
+  padding: 6px 0;
+  Color: #0A003D80;
+
+
+  font-family: Cairo;
+  font-weight: 400;
+  font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 10px;
+
+}
+.section li svg{
+    fill:#D9D9D9;
+    fill-opacity: 1;
+    margin-right: 10px;
+}
+.section li.active svg  {
+  fill: #F83DCC;
+fill-opacity: 1;
+  
+}
+
+
+.content {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 20px;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+}
+.submenu {
+  list-style: none;
+  padding-left: 32px;
+  margin-top: 6px;
+}
+
+.submenu li {
+  
+  font-size: 18px;
+}
+.submenu {
+  list-style: none;
+  padding-left: 32px;
+ 
+}
+
+.submenu li {
+  
+  font-size: 18px;
+}
+
+.row-item {
+    height: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.row-item.active {
+    background: #7D21FE80;
+}
+
+.row-item.active p {
+    color: #FFFFFF !important;
+}
+
+.row-item.active svg {
+    fill: #FFFFFF;
+    fill-opacity: 1 !important;
+}
+
+
+.submenu .row-item {
+    padding-left: 46px; 
+    font-size: 18px;
+}
+
+
+.submenu .row-item svg circle {
+    fill: #D9D9D9;
+}
+
+.submenu .row-item.active svg circle {
+    fill: #F83DCC;
+}
+
+
+.section {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    width: auto;
+    height: auto;
+}
+
+
+.section.active {
+    background: transparent !important;
+}
+.overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 700;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+.hamburger {
+            display: none;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 1000;
+            cursor: pointer;
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 1023px) {
+           
+
+           
+             .sidebar-full.open {
+                transform: translateX(0);
+                
+                z-index: 1000;
+                max-width: 80%;
+            }
+
+            .sidebar-mini {
+                width: 0;
+                overflow: hidden;
+            }
+
+            .content {
+                margin-left: 0;
+                padding-top: 70px;
+            }
+        }
+
+        @media (max-width: 820px) {
+            .sidebar-full.open {
+                transform: translateX(0);
+                width: 100%;
+                z-index: 1000;
+                max-width: 50%;
+            }
+
+            .sidebar-mini {
+                width: 0;
+                overflow: hidden;
+            }
+
+            .content {
+                padding-top: 80px;
+            }
+        }
+       
+
+
