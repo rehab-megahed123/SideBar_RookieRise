@@ -444,7 +444,7 @@ fill-opacity: 1;
                 
             }
           }
-         @media (max-width: 414px) {
+         @media (max-width: 430px) {
             .sidebar-mini {
                 width: 0;
                 overflow: hidden;
