@@ -1,0 +1,167 @@
+body{
+    height:100%;
+}
+.Main-title{
+    
+    font-family: Cairo;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+letter-spacing: 0%;
+color: #7D21FE;
+
+
+}
+.title{
+    font-family: Cairo;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+color:#0A003D;
+
+}
+.card_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card_title p {
+    margin: 0;
+}
+.card-container{
+    height:30%;
+    margin:10px;
+    
+}
+.card{
+height:300px;
+border-radius: 12px;
+background-color: #ffff;
+ overflow-y: auto;   
+    overflow-x: hidden;
+
+}
+.card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.card::-webkit-scrollbar-thumb {
+    background-color: #C9C9C9;
+    border-radius: 10px;
+}
+
+.card::-webkit-scrollbar-track {
+    background: transparent;
+}
+.image-container{
+    width:55px;
+    height:42px;
+    
+    border-radius:12px;
+}
+.EmployeeName{
+font-family: Cairo;
+font-weight: 400;
+font-size: 16px;
+color: #0A003D;
+
+}
+.date{
+    font-family: Cairo;
+font-weight: 300;
+font-style: Light;
+font-size: 10px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #0A003D;
+
+
+
+}
+.card-group{
+    background-color: #F5F4F480;
+    margin: 0 2px 2px 2px;
+     flex-shrink: 0;
+    
+}
+
+.scroll-card {
+    height: 300px;          
+    border-radius: 12px;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;  
+    overflow-y: auto;        
+    overflow-x: hidden;
+}
+
+
+.card-group-list {
+    display: flex;
+    flex-direction: column;  
+    gap: 5px;               
+}
+
+
+.scroll-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-card::-webkit-scrollbar-thumb {
+    background-color: #C9C9C9;
+    border-radius: 10px;
+}
+
+.scroll-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+.requestscount{
+    font-family: Cairo;
+    border: 1px solid #F5F4F4B2;
+    background-color: #F5F4F4B2;
+    height:50%;
+
+
+
+}
+.count{
+    font-family: Cairo;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+
+
+color: #0A003D80;
+
+}
+button{
+    width: 129px;
+height: 36px;
+
+margin-top: 20%;
+border-radius: 12px;
+border-color: #F83DCC80;
+gap: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+background: #F83DCC80;
+font-family: Cairo;
+font-weight: 300;
+font-style: Light;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color:#0A003D;
+
+}
